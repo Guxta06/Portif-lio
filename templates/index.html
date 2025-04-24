@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Scanner de Vulnerabilidades</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Scanner de Vulnerabilidades Web</h1>
+    <form method="POST">
+        <input type="text" name="url" placeholder="https://exemplo.com" required>
+        <button type="submit">Escanear</button>
+    </form>
+    {% if resultado %}
+    <h2>Resultado:</h2>
+    <pre>{{ resultado }}</pre>
+    {% endif %}
+</body>
+</html>
